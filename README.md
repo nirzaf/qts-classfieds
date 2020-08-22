@@ -11,7 +11,8 @@ Angular version ```10```
 
 Instruction for Collaborators 
 
-[x] Create a branch name same as issue name with issue number 
-[x] Once you done the task commit the changes with most suitable commit message followed by #issue_number 
-[x] Create the pull request after commit & push the changes to your branch 
-[x] create a new branch from master and pull the changes from remote/origin master branch and continue with next tasks which are assigned to you under issues   
+*   Create a branch name same as issue name with issue number 
+*   Once you done the task commit the changes with most suitable commit message followed by #issue_number 
+*   Create the pull request after commit & push the changes to your branch 
+*   Create a new branch from master and pull the changes from remote/origin master branch and continue with next tasks which are assigned to you under issues   
+*   Do not try to commit the master branch
