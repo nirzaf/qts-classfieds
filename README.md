@@ -14,4 +14,5 @@ Instruction for Collaborators
 *   Create a branch name same as issue name with issue number 
 *   Once you done the task commit the changes with most suitable commit message followed by #issue_number 
 *   Create the pull request after commit & push the changes to your branch 
-*   create a new branch from master and pull the changes from remote/origin master branch and continue with next tasks which are assigned to you under issues   
+*   Create a new branch from master and pull the changes from remote/origin master branch and continue with next tasks which are assigned to you under issues   
+*   Do not try to commit the master branch
