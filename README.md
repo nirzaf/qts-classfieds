@@ -17,6 +17,7 @@ Instruction for Collaborators
 *   Create a new branch from master and pull the changes from remote/origin master branch and continue with next tasks which are assigned to you under issues   
 *   Do not try to commit to the master branch
 *   Test well locally before you create the pull request
+*   Link the pull request with relevant issue
 
 Recommended IDE Pycharm Professional 
 
