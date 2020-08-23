@@ -11,13 +11,14 @@ Angular version ```10```
 
 Instruction for Collaborators 
 
-*   Create a branch name same as issue name with issue number 
-*   Once you done the task commit the changes with most suitable commit message followed by #issue_number 
-*   Create the pull request after commit & push the changes to your branch 
-*   Create a new branch from master and pull the changes from remote/origin master branch and continue with next tasks which are assigned to you under issues   
-*   Do not try to commit to the master branch
-*   Test well locally before you create the pull request
+*   Create a branch name same as issue name with issue number, For Example, if issue name is "this-is-issue-abcd #8" your branch name should be "this-is-issue-abcd.#8" 
+*   Once you done the task commit the changes with most suitable commit message followed by #issue_number
+*   Pull the Changes from Origin/Remote Master Branch 
+*   Apply the changes and commit & push the changes 
+*   Create the pull request after commit & push the changes
 *   Link the pull request with relevant issue
+
+Note : Do not try to commit to the master branch, Test well locally before you create the pull request
 
 Recommended IDE Pycharm Professional 
 
