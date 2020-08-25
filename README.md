@@ -23,5 +23,3 @@ Note : Do not try to commit to the master branch, Test well locally before you c
 Recommended IDE Pycharm Professional 
 
 Download Link https://www.jetbrains.com/pycharm/download
-
-Fazrin fazrin@quadrate.lk
