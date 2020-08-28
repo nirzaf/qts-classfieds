@@ -63,3 +63,4 @@ Windows Installation
       ```>>> import django ```
       
       ```>>> print django.get_version() ```
+santhujan santhujan@quadrate.lk
