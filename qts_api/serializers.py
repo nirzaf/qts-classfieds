@@ -11,3 +11,15 @@ from .models import district
 from .models import feedback
 from .models import sub_category
 from .models import user
+
+
+class ad_typeSerializer(serializers.Serializer):
+    type_name = serializers.CharField(max_length=50)
+
+    def create(self, validated_data):
+        return ad_type.objects.create(validated_data)
+
+    def update(self, instance, validated_data):
+        instance.type_name = validated_data.get('type_name', instance.type_name)
+        instance.save()
+        return instance
