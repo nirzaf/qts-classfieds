@@ -3,13 +3,13 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 
 
 # Model Classes
-class ad_types(models.Model):
+class ad_type(models.Model):
     type_id = models.IntegerField(primary_key=True, validators=[MinValueValidator(1), MaxValueValidator(5)])
     type_name = models.CharField(max_length=50)
     Is_deleted = models.BooleanField()
 
 
-class users(models.Model):
+class user(models.Model):
     user_id = models.AutoField(primary_key=True)
     username = models.CharField(max_length=100)
     password = models.CharField(max_length=100)
@@ -35,29 +35,29 @@ class sub_category(models.Model):
     is_deleted = models.BooleanField(default=False)
 
 
-class districts(models.Model):
+class district(models.Model):
     district_id = models.AutoField(primary_key=True)
     district_name = models.CharField(max_length=100)
 
 
-class cities(models.Model):
+class city(models.Model):
     city_id = models.AutoField(primary_key=True)
     city_name = models.CharField(max_length=70)
-    district_id = models.ForeignKey(districts, on_delete=models.CASCADE)
+    district_id = models.ForeignKey(district, on_delete=models.CASCADE)
 
 
 class ad_listing(models.Model):
     ad_id = models.BigAutoField(primary_key=True)
     ad_name = models.CharField(max_length=150)
-    ad_type = models.ForeignKey(ad_types, on_delete=models.CASCADE)
+    ad_type = models.ForeignKey(ad_type, on_delete=models.CASCADE)
     ad_price = models.DecimalField(max_digits=12, decimal_places=2, blank=True, null=True)
     ad_status = models.IntegerField
     ad_duration = models.IntegerField
     is_ad_promoted = models.BooleanField(default=False)
     promotion_duration = models.IntegerField
     ad_posted_date = models.DateField
-    ad_posted_by = models.ForeignKey(users, on_delete=models.CASCADE)
-    city = models.ForeignKey(cities, on_delete=models.CASCADE)
+    ad_posted_by = models.ForeignKey(user, on_delete=models.CASCADE)
+    city = models.ForeignKey(city, on_delete=models.CASCADE)
     ad_category = models.ForeignKey(sub_category, on_delete=models.CASCADE)
     is_deleted = models.BooleanField(default=False)
 
@@ -74,7 +74,7 @@ class feedback(models.Model):
     rating = models.IntegerField
     comments = models.TextField
     user_id = models.IntegerField
-    commented_user = models.ForeignKey(users, on_delete=models.CASCADE)
+    commented_user = models.ForeignKey(user, on_delete=models.CASCADE)
     is_deleted = models.BooleanField(default=False)
 
 
@@ -86,7 +86,7 @@ class promotion_package(models.Model):
     is_deleted = models.BooleanField(default=False)
 
 
-class promoted_ad_details(models.Model):
+class promoted_ad_detail(models.Model):
     pa_ad_id = models.BigAutoField(primary_key=True)
     ad_id = models.ForeignKey(ad_listing, on_delete=models.CASCADE)
     starting_date = models.DateField
@@ -97,7 +97,7 @@ class promoted_ad_details(models.Model):
 
 class payment(models.Model):
     payment_id = models.BigAutoField(primary_key=True)
-    promoted_ad_id = models.ForeignKey(promoted_ad_details, on_delete=models.CASCADE)
+    promoted_ad_id = models.ForeignKey(promoted_ad_detail, on_delete=models.CASCADE)
     payment_date = models.DateField
     payment_time = models.TimeField
     paid_amount = models.DecimalField
