@@ -8,6 +8,9 @@ class ad_type(models.Model):
     type_name = models.CharField(max_length=50)
     Is_deleted = models.BooleanField()
 
+    def __str__(self):
+        return "Ad Type with Id :" + str(self.type_id) + " is added!"
+
 
 class user(models.Model):
     user_id = models.AutoField(primary_key=True)

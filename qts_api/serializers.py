@@ -13,13 +13,9 @@ from .models import sub_category
 from .models import user
 
 
-class ad_typeSerializer(serializers.Serializer):
-    type_name = serializers.CharField(max_length=50)
+class ad_typeSerializer(serializers.ModelSerializers):
+    class Meta:
+        model = ad_type
+        fields = ['type_id', 'type_name']
 
-    def create(self, validated_data):
-        return ad_type.objects.create(validated_data)
 
-    def update(self, instance, validated_data):
-        instance.type_name = validated_data.get('type_name', instance.type_name)
-        instance.save()
-        return instance
