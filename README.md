@@ -63,4 +63,9 @@ Windows Installation
       ```>>> import django ```
       
       ```>>> print django.get_version() ```
-santhujan santhujan@quadrate.lk
+      
+   
+ SuperUser Username ```qts-admin```
+ 
+ SuperUser Password ```QTSSuperUser```
+ 

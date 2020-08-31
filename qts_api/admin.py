@@ -25,3 +25,4 @@ admin.site.register(sub_category)
 admin.site.register(user)
 admin.site.register(district)
 admin.site.register(feedback)
+
