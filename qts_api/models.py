@@ -105,10 +105,3 @@ class payment(models.Model):
     payment_time = models.TimeField
     paid_amount = models.DecimalField
     payment_status = models.BooleanField(default=True)
-
-
-
-
-
-
-

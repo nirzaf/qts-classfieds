@@ -13,9 +13,9 @@ from .models import sub_category
 from .models import user
 
 
-class ad_typeSerializer(serializers.ModelSerializers):
+class ad_typeSerializer(serializers.ModelSerializer):
     class Meta:
         model = ad_type
-        fields = ['type_id', 'type_name']
+        fields = '__all__'
 
 
