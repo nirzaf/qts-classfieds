@@ -1,6 +1,12 @@
-from django.shortcuts import render
-from django.http import HttpResponse, JsonResponse
+from django.http import JsonResponse
+from rest_framework import generics, mixins
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.authentication import TokenAuthentication
+from rest_framework import status
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
 from rest_framework.parsers import JSONParser
+
 from .models import ad_type
 from .serializers import ad_typeSerializer
 
@@ -16,19 +22,30 @@ from .models import feedback
 from .models import sub_category
 from .models import user
 
+from .serializers import ad_typeSerializer
+
 
 # Create your views here.
-def ad_type_list(request):
-    if request.method == 'GET':
-        types = ad_type.objects.all()
-        serializer = ad_typeSerializer(types, many=True)
-        return JsonResponse(serializer.data, safe=False)
 
-    elif request.method == 'POST':
-        data = JSONParser.parse(request)
-        serializer = ad_typeSerializer(data=data)
+class GenericAdTypeAPI(generics.GenericAPIView, mixins.CreateModelMixin, mixins.UpdateModelMixin,
+                       mixins.RetrieveModelMixin):
+    serializer_class = ad_typeSerializer
+    queryset = ad_type.objects.all()
+    lookup_field = 'pk'
 
-        if serializer.is_valid():
-            serializer.save()
-            return JsonResponse(serializer.data, status=201)
-        return JsonResponse(serializer.error, status=404)
+    def get(self, request, pk=None):
+        return self.retrieve(request, pk=pk)
+
+    def post(self, request):
+        return self.create(request)
+
+    def put(self, request, pk=None):
+        return self.update(request, pk)
+
+
+class GenericAdTypeGetAPI(generics.GenericAPIView, mixins.ListModelMixin):
+    serializer_class = ad_type
+    queryset = ad_type.objects.all()
+
+    def get(self, request):
+        return self.list(request)

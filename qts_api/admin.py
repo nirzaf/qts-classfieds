@@ -13,6 +13,7 @@ from .models import sub_category
 from .models import user
 
 # Register your models here.
+
 admin.site.register(ad_type)
 admin.site.register(ad_listing)
 admin.site.register(image)
