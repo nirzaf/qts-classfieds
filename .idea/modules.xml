@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ClassifiedsDjangoAngular.iml" filepath="$PROJECT_DIR$/.idea/ClassifiedsDjangoAngular.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/qtsdjango.iml" filepath="$PROJECT_DIR$/.idea/qtsdjango.iml" />
     </modules>
   </component>
 </project>
