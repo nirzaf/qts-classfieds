@@ -8,3 +8,6 @@ class ad_typeViewSet(viewsets.ModelViewSet):
     serializer_class = serailizers.ad_typeSerializer
 
 
+class feedbackViewSet(viewsets.ModelViewSet):
+    queryset = models.feedback.objects.all()
+    serializer_class = serailizers.feedbackSerializer
