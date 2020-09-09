@@ -6,7 +6,7 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 class ad_type(models.Model):
     type_id = models.IntegerField(primary_key=True, validators=[MinValueValidator(1), MaxValueValidator(5)])
     type_name = models.CharField(max_length=50)
-    Is_deleted = models.BooleanField()
+    Is_deleted = models.BooleanField(default=False)
 
     def __str__(self):
         return "Ad Type with Id :" + str(self.type_id) + " is added!"
@@ -23,6 +23,9 @@ class user(models.Model):
     user_type = models.IntegerField
     json_token = models.CharField(max_length=100)
     is_deleted = models.BooleanField(default=False)
+
+    def __str__(self):
+        return "User with Id :" + str(self.user_id) + " is added!"
 
 
 class parent_category(models.Model):
@@ -75,10 +78,13 @@ class image(models.Model):
 class feedback(models.Model):
     feedback_id = models.AutoField(primary_key=True)
     rating = models.IntegerField
-    comments = models.TextField
+    comments = models.TextField(default=False, max_length=250)
     user_id = models.IntegerField
     commented_user = models.ForeignKey(user, on_delete=models.CASCADE)
     is_deleted = models.BooleanField(default=False)
+
+    def __str__(self):
+        return "Feedback with Id :" + str(self.feedback_id) + " is added!"
 
 
 class promotion_package(models.Model):

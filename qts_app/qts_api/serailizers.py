@@ -1,5 +1,7 @@
 from rest_framework import serializers
 from .models import ad_type
+from .models import feedback
+from .models import user
 
 
 class ad_typeSerializer(serializers.ModelSerializer):
@@ -8,3 +10,8 @@ class ad_typeSerializer(serializers.ModelSerializer):
         # fields = '__all__'
         fields = ['type_id', 'type_name']
 
+
+class feedbackSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = feedback
+        fields = '__all__'
