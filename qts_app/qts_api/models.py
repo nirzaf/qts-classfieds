@@ -6,7 +6,7 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 class ad_type(models.Model):
     type_id = models.IntegerField(primary_key=True, validators=[MinValueValidator(1), MaxValueValidator(5)])
     type_name = models.CharField(max_length=50)
-    Is_deleted = models.BooleanField()
+    Is_deleted = models.BooleanField(default=False)
 
     def __str__(self):
         return "Ad Type with Id :" + str(self.type_id) + " is added!"
@@ -20,7 +20,7 @@ class user(models.Model):
     last_name = models.CharField(max_length=150)
     address = models.TextField
     contact = models.CharField(max_length=20)
-    user_type = models.IntegerField
+    user_type = models.IntegerField()
     json_token = models.CharField(max_length=100)
     is_deleted = models.BooleanField(default=False)
 
@@ -54,10 +54,10 @@ class ad_listing(models.Model):
     ad_name = models.CharField(max_length=150)
     ad_type = models.ForeignKey(ad_type, on_delete=models.CASCADE)
     ad_price = models.DecimalField(max_digits=12, decimal_places=2, blank=True, null=True)
-    ad_status = models.IntegerField
+    ad_status = models.IntegerField()
     ad_duration = models.IntegerField
     is_ad_promoted = models.BooleanField(default=False)
-    promotion_duration = models.IntegerField
+    promotion_duration = models.IntegerField()
     ad_posted_date = models.DateField
     ad_posted_by = models.ForeignKey(user, on_delete=models.CASCADE)
     city = models.ForeignKey(city, on_delete=models.CASCADE)
@@ -68,17 +68,20 @@ class ad_listing(models.Model):
 class image(models.Model):
     image_id = models.BigAutoField(primary_key=True)
     ad_id = models.ForeignKey(ad_listing, on_delete=models.CASCADE)
-    url = models.TextField
+    url = models.TextField()
     is_deleted = models.BooleanField(default=False)
 
 
 class feedback(models.Model):
     feedback_id = models.AutoField(primary_key=True)
-    rating = models.IntegerField
-    comments = models.TextField
-    user_id = models.IntegerField
+    rating = models.IntegerField(default=1)
+    comments = models.TextField(max_length=250)
+    user_id = models.IntegerField()
     commented_user = models.ForeignKey(user, on_delete=models.CASCADE)
     is_deleted = models.BooleanField(default=False)
+
+    def __str__(self):
+        return "Feedback with Id :" + str(self.feedback_id) + " is added!"
 
 
 class promotion_package(models.Model):
