@@ -42,6 +42,9 @@ class district(models.Model):
     district_id = models.AutoField(primary_key=True)
     district_name = models.CharField(max_length=100)
 
+    def __str__(self):
+        return "District with Id :" + str(self.district_id) + " is added!"
+
 
 class city(models.Model):
     city_id = models.AutoField(primary_key=True)

@@ -1,6 +1,5 @@
 from rest_framework import viewsets
-from . import models
-from . import serailizers
+from . import models, serailizers
 
 class ad_listingViewSet(viewsets.ModelViewSet):
     queryset = models.ad_listing.objects.all()
@@ -21,3 +20,7 @@ class feedbackViewSet(viewsets.ModelViewSet):
     queryset = models.feedback.objects.all()
     serializer_class = serailizers.feedbackSerializer
 
+
+class districtViewSet(viewsets.ModelViewSet):
+    queryset = models.district.objects.all()
+    serializer_class = serailizers.districtSerializer
