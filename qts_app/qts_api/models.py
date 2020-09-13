@@ -91,6 +91,9 @@ class promotion_package(models.Model):
     duration = models.IntegerField
     is_deleted = models.BooleanField(default=False)
 
+    def __str__(self):
+        return "Promotion Package with Id :" + str(self.promotion_id) + " is added!"
+
 
 class promoted_ad_detail(models.Model):
     pa_ad_id = models.BigAutoField(primary_key=True)
