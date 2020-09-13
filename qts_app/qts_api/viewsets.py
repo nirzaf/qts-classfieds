@@ -24,3 +24,8 @@ class feedbackViewSet(viewsets.ModelViewSet):
 class districtViewSet(viewsets.ModelViewSet):
     queryset = models.district.objects.all()
     serializer_class = serailizers.districtSerializer
+
+
+class imageViewSet(viewsets.ModelViewSet):
+    queryset = models.image.objects.all()
+    serializer_class = serailizers.imageSeralizer

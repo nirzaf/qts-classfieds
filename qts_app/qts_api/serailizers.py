@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from .models import ad_type, payment, ad_listing, promotion_package, feedback
-from .models import district
+from .models import district, image
 
 
 class ad_typeSerializer(serializers.ModelSerializer):
@@ -36,3 +36,9 @@ class districtSerializer(serializers.ModelSerializer):
     class Meta:
         model = district
         fields = '__all__'
+
+
+class imageSeralizer(serializers.ModelSerializer):
+    class Meta:
+        model = image
+        fields = '___all_'
