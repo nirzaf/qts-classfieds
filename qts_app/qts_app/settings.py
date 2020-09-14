@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'qts_api',
     'rest_framework',
+    'promoted_ad_detailApi',
 ]
 
 MIDDLEWARE = [
