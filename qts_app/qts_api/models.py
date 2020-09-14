@@ -37,6 +37,9 @@ class sub_category(models.Model):
     parent_category = models.ForeignKey(parent_category, on_delete=models.CASCADE)
     is_deleted = models.BooleanField(default=False)
 
+    def __str__(self):
+        return "sub_category with Id :" + str(self.category_id) + " is added!"
+
 
 class district(models.Model):
     district_id = models.AutoField(primary_key=True)

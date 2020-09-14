@@ -1,6 +1,12 @@
 from rest_framework import viewsets
 from . import models, serailizers
 
+
+class sub_categoryViewSet(viewsets.ModelViewSet):
+    queryset = models.sub_category.objects.all()
+    serializer_class = serailizers.sub_categorySerializer
+
+
 class ad_listingViewSet(viewsets.ModelViewSet):
     queryset = models.ad_listing.objects.all()
     serializer_class = serailizers.ad_listingSerializer
