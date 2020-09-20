@@ -18,11 +18,12 @@ class user(models.Model):
     password = models.CharField(max_length=100)
     first_name = models.CharField(max_length=150)
     last_name = models.CharField(max_length=150)
-    address = models.TextField
     contact = models.CharField(max_length=20)
-    user_type = models.IntegerField()
     json_token = models.CharField(max_length=100)
     is_deleted = models.BooleanField(default=False)
+
+    def __str__(self):
+        return "User with Id :" + str(self.user_id) + " is added!"
 
 
 class parent_category(models.Model):
