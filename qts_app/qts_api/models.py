@@ -43,6 +43,9 @@ class district(models.Model):
     district_id = models.AutoField(primary_key=True)
     district_name = models.CharField(max_length=100)
 
+    def __str__(self):
+        return "District with Id :" + str(self.district_id) + " is added!"
+
 
 class city(models.Model):
     city_id = models.AutoField(primary_key=True)
@@ -91,6 +94,9 @@ class promotion_package(models.Model):
     promotion_cost = models.DecimalField(max_digits=12, decimal_places=2, blank=True, null=True)
     duration = models.IntegerField
     is_deleted = models.BooleanField(default=False)
+
+    def __str__(self):
+        return "Promotion Package with Id :" + str(self.promotion_id) + " is added!"
 
 
 class promoted_ad_detail(models.Model):
