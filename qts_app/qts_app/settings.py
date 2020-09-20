@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'qts_api',
     'rest_framework',
+    'qts_app'
 ]
 
 MIDDLEWARE = [
