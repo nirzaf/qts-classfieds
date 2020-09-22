@@ -55,6 +55,8 @@ class city(models.Model):
     city_name = models.CharField(max_length=70)
     district_id = models.ForeignKey(district, on_delete=models.CASCADE)
 
+    def __str__(self):
+        return "City with Id :" + str(self.city_id) + " is added!"
 
 class ad_listing(models.Model):
     ad_id = models.BigAutoField(primary_key=True)
@@ -71,12 +73,18 @@ class ad_listing(models.Model):
     ad_category = models.ForeignKey(sub_category, on_delete=models.CASCADE)
     is_deleted = models.BooleanField(default=False)
 
+    def __str__(self):
+        return "Ad Listing with Id :" + str(self.ad_id) + " is added!"
+
 
 class image(models.Model):
     image_id = models.BigAutoField(primary_key=True)
     ad_id = models.ForeignKey(ad_listing, on_delete=models.CASCADE)
     url = models.TextField()
     is_deleted = models.BooleanField(default=False)
+
+    def __str__(self):
+        return "District with Id :" + str(self.image_id) + " is added!"
 
 
 class feedback(models.Model):
@@ -110,6 +118,9 @@ class promoted_ad_detail(models.Model):
     promotion_id = models.ForeignKey(promotion_package, on_delete=models.CASCADE)
     is_deleted = models.BooleanField(primary_key=False)
 
+    def __str__(self):
+        return "District with Id :" + str(self.pa_ad_id) + " is added!"
+
 
 class payment(models.Model):
     payment_id = models.BigAutoField(primary_key=True)
@@ -118,3 +129,6 @@ class payment(models.Model):
     payment_time = models.TimeField
     paid_amount = models.DecimalField
     payment_status = models.BooleanField(default=True)
+
+    def __str__(self):
+        return "District with Id :" + str(self.payment_id) + " is added!"
