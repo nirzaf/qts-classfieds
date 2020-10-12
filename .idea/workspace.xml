@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fbf8a4f-c42f-468b-8895-9f0c1dffe283" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/qts_app/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qts_app/qts_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/qts_app/qts_app/settings.py" afterDir="false" />
     </list>
@@ -52,6 +53,7 @@
   </component>
   <component name="JupyterTrust" id="a8c2dd36-b67d-4753-bd06-e9ccb02d0c59" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -60,6 +62,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -100,6 +103,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="Commit the changes" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="749" y="209" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602493765910">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="749" y="209" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1602493765910" />
+    <state x="368" y="48" key="SettingsEditor" timestamp="1602494013432">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="368" y="48" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1602494013432" />
     <state x="555" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600762698498">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
