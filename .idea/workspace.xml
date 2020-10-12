@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7fbf8a4f-c42f-468b-8895-9f0c1dffe283" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qts_app/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/qts_app/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qts_app/qts_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/qts_app/qts_app/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,8 +52,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JupyterTrust" id="a8c2dd36-b67d-4753-bd06-e9ccb02d0c59" />
+  <component name="ProjectId" id="1ilvwGFDzqphLpe9m9YXRpS2Zk1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -60,6 +70,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -71,6 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600043522401</updated>
+      <workItem from="1602495236792" duration="1351000" />
     </task>
     <task id="LOCAL-00001" summary="Commit the changes">
       <created>1600762696987</created>
@@ -81,6 +93,9 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -100,10 +115,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="Commit the changes" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="749" y="209" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602495197394">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="749" y="209" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1602495197394" />
+    <state x="368" y="48" key="SettingsEditor" timestamp="1602494013432">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="368" y="48" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1602494013432" />
     <state x="555" y="253" key="Vcs.Push.Dialog.v2" timestamp="1600762698498">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="555" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600762698498" />
+    <state x="680" y="230" key="com.intellij.ide.util.TipDialog" timestamp="1602495309444">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="680" y="230" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1602495309444" />
     <state x="670" y="119" width="585" height="801" key="find.popup" timestamp="1600785701916">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
