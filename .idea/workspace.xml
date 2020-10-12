@@ -21,8 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7fbf8a4f-c42f-468b-8895-9f0c1dffe283" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qts_app/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/qts_app/Procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qts_app/qts_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/qts_app/qts_app/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600043522401</updated>
-      <workItem from="1602495236792" duration="1351000" />
+      <workItem from="1602495236792" duration="1970000" />
     </task>
     <task id="LOCAL-00001" summary="Commit the changes">
       <created>1600762696987</created>
@@ -135,5 +133,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="670" y="119" width="585" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600785701916" />
+    <state x="647" y="89" width="670" height="58" key="search.everywhere.popup" timestamp="1602503855646">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="647" y="89" width="670" height="58" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1602503855646" />
   </component>
 </project>
