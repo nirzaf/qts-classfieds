@@ -47,6 +47,7 @@ distributed==2.10.0
 dj-database-url==0.5.0
 Django==3.1.2
 django-heroku==0.3.1
+djangorestframework==3.12.1
 docutils==0.16
 entrypoints==0.3
 et-xmlfile==1.0.1
